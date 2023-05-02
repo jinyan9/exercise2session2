@@ -1,39 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    android:background="@drawable/cloudpink"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/textView"
+        android:layout_width="376dp"
+        android:layout_height="50dp"
+        android:background="#8A2F81"
+        android:text="Registration Form"
+        android:textColor="#EFEDED"
+        android:textColorLink="#AE1919"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to AdventuresLearningCentre!" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/message" />
+        android:background="#9C27B0"
+        android:text="Full Name"
+        android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/button"
+    <EditText
+        android:id="@+id/full_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9C27B0"
+        android:text="Gender"
+        android:textColor="#FFFFFF" />
+
+    <RadioGroup
+        android:id="@+id/gender_radiogroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button 1" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="0dp"
+        <RadioButton
+            android:id="@+id/male_radiobutton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/text"
-            android:textAppearance="@android:style/TextAppearance.Large" />
+            android:text="Male" />
 
-        <Button
-            android:layout_width="0dp"
+        <RadioButton
+            android:id="@+id/female_radiobutton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Button 2" />
-    </LinearLayout>
+            android:text="Female" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9C27B0"
+        android:text="Student ID"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#9C27B0" />
+
+    <EditText
+        android:id="@+id/student_id_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9C27B0"
+        android:text="School"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/school_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9C27B0"
+        android:text="Email"
+        android:textColor="#FDFDFD" />
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9C27B0"
+        android:text="Phone Number"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/phone_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="363dp"
+        android:layout_height="114dp"
+        android:rotationX="8"
+        app:srcCompat="@drawable/alc" />
+
 </LinearLayout>

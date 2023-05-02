@@ -16,3 +16,5 @@ rootProject.name = "Demo My First App"
 include ':app'
 include ':app'
 include ':app'
+include ':app'
+include ':app'
